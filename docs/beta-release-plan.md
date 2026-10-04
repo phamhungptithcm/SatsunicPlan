@@ -17,3 +17,7 @@ No automatic public MCP exposure. No production data import or destructive basel
 ## Release checks
 
 Node22 build and25 tests, isolated backend12 groups, simulated cloud browser3 viewports are current prior evidence. Repeat build/unit tests from an isolated staged-source export. Inspect staged paths/secrets without printing values. Confirm main/tag remotely and GitHub release tag/body. Independent release review must distinguish source publication from blocked production acceptance. Source is currently unborn/untracked; publication provides commit provenance but does not retroactively certify prior tests as deployed.
+
+## Owner decisions (2026-10-04)
+
+Owner selected Firestore Singapore (asia-southeast1) and billing account 01428C-358437-2361F8 for project satsunicplan. Owner confirmed: “Đã duyệt, công bố source beta theo AGPL”. This is owner approval for public source-beta distribution under AGPL, not an automated legal audit certificate; the complete transitive audit remains incomplete. Root LICENSE includes GNU AGPL v3; existing upstream notices are retained.
