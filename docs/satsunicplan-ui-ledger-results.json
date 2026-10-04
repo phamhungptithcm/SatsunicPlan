@@ -1,0 +1,42 @@
+[
+  {
+    "action": "criterion 1",
+    "exit": 0,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"criterion\": 1,\n  \"criterion_hash\": \"522d250c8ce7c9da5526c236641965f2cfb54bb128949e41fd7da21ccca7f48f\",\n  \"status\": \"VERIFIED\",\n  \"weight\": 1,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Branding verified in source and rendered screenshot.\",\n  \"recorded_at\": \"2026-10-04T18:52:18.480Z\",\n  \"record_id\": \"bc5b2af21e542ed1a31fcd3f060897a1b737ad33769cfb325d2124507e7e7eb4\"\n}\n"
+  },
+  {
+    "action": "criterion 2",
+    "exit": 0,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"criterion\": 2,\n  \"criterion_hash\": \"f9b567d3b0dbf3cc364b55bd893d89dbfbcbbe1b7951f8b5ffc84748a9fcbe8f\",\n  \"status\": \"IN_PROGRESS\",\n  \"weight\": 1,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Normal desktop/mobile states verified; final zero state and recovery UI blocked.\",\n  \"recorded_at\": \"2026-10-04T18:52:18.992Z\",\n  \"record_id\": \"b36e1cb8041716d1020d5884936c01f4d74196b4c95f1bcdbb2f528fc526ad20\"\n}\n"
+  },
+  {
+    "action": "criterion 3",
+    "exit": 1,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"criterion\": 3,\n  \"criterion_hash\": \"cb69fe96172df50130c61716a461d733504a33cdb85ea2f9ac36f957020ac86f\",\n  \"status\": \"BLOCKED\",\n  \"weight\": 1,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Checks passed previously; no Git HEAD prevents current final review.\",\n  \"recorded_at\": \"2026-10-04T18:52:19.382Z\",\n  \"record_id\": \"0604a2095a613d8d9c24275709cf99908f994e15691bc3bc74d07e5226492918\"\n}\n"
+  },
+  {
+    "action": "build",
+    "exit": 0,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"gate\": \"build\",\n  \"status\": \"PASSED\",\n  \"required\": true,\n  \"repository_commit\": null,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Build passed before interruption; unchanged source hashes.\",\n  \"exit_code\": 0,\n  \"recorded_at\": \"2026-10-04T18:52:19.927Z\",\n  \"record_id\": \"5ac713ade23d10f199fd753d1a2a401a48f9f5781a1e52a738a4e07e0eec7752\"\n}\n"
+  },
+  {
+    "action": "typecheck",
+    "exit": 0,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"gate\": \"typecheck\",\n  \"status\": \"PASSED\",\n  \"required\": true,\n  \"repository_commit\": null,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Typecheck passed before interruption.\",\n  \"exit_code\": 0,\n  \"recorded_at\": \"2026-10-04T18:52:20.438Z\",\n  \"record_id\": \"f4c1c75aa73e6a32578037bd874e59777c4d764f0fd501d28f2a0f8c6f2f248c\"\n}\n"
+  },
+  {
+    "action": "tests",
+    "exit": 0,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"gate\": \"tests\",\n  \"status\": \"PASSED\",\n  \"required\": true,\n  \"repository_commit\": null,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"19 unit tests passed before interruption.\",\n  \"exit_code\": 0,\n  \"recorded_at\": \"2026-10-04T18:52:20.851Z\",\n  \"record_id\": \"1ff65b56576e679a0c86527405d52338e956955c7826112cdba3230519550e43\"\n}\n"
+  },
+  {
+    "action": "product-content",
+    "exit": 1,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"gate\": \"product-content\",\n  \"status\": \"BLOCKED\",\n  \"required\": true,\n  \"repository_commit\": null,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Final zero-count browser state not verified.\",\n  \"exit_code\": null,\n  \"recorded_at\": \"2026-10-04T18:52:21.636Z\",\n  \"record_id\": \"c5a2b3cd234997eae5d1db4eb48fadf1d944f19069f1459052a7537229996b71\"\n}\n"
+  },
+  {
+    "action": "final-review",
+    "exit": 1,
+    "output": "{\n  \"version\": 1,\n  \"task_id\": \"SP-UI-001\",\n  \"gate\": \"final-review\",\n  \"status\": \"BLOCKED\",\n  \"required\": true,\n  \"repository_commit\": null,\n  \"evidence_source_hash\": \"329b1b2848401cd3bf97a2d8a6ab15d4fb5aeee3bc51ff54fba901045ffdc485\",\n  \"summary\": \"Runtime requires readable Git HEAD.\",\n  \"exit_code\": null,\n  \"recorded_at\": \"2026-10-04T18:52:22.113Z\",\n  \"record_id\": \"e094ac465fe721cac18c367f33dc369e87b098aeca9f27505307f274b221907a\"\n}\n"
+  }
+]

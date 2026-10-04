@@ -1,0 +1,138 @@
+{
+  "desktop": [
+    {
+      "page": "Knowledge",
+      "heading": "Knowledge",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Ready work",
+      "heading": "Ready work",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Decisions",
+      "heading": "Decisions",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Reviews",
+      "heading": "Reviews",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Reports",
+      "heading": "Reports",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Releases",
+      "heading": "Releases",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "page": "Connect agent",
+      "heading": "Connect agent",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "page": "Work",
+      "heading": "Work",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Knowledge",
+      "heading": "Knowledge",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Ready work",
+      "heading": "Ready work",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Decisions",
+      "heading": "Decisions",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Reviews",
+      "heading": "Reviews",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Reports",
+      "heading": "Reports",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Releases",
+      "heading": "Releases",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "page": "Connect agent",
+      "heading": "Connect agent",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    }
+  ],
+  "roadmapViewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "rowHeights": 64,
+  "keyboardFocus": {
+    "control": "Work",
+    "outline": "3px solid"
+  },
+  "fixture": "Synthetic UI check — roadmap labels created through real app"
+}

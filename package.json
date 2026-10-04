@@ -1,0 +1,58 @@
+{
+  "name": "hunpeolabs-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "functions"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && npm run build --workspace functions",
+    "typecheck": "tsc --noEmit && npm run typecheck --workspace functions",
+    "lint": "npm run typecheck",
+    "test": "node --import tsx --test tests/domain.test.ts tests/plane.test.ts tests/ask.test.ts tests/firebase-config.test.ts tests/firebase-runtime.test.ts tests/firebase-handler.test.ts tests/firebase-release.test.mjs",
+    "firebase:prepare": "node scripts/firebase-release.mjs",
+    "emulators": "node tests/emulators.mjs start",
+    "seed:emulator": "node tests/seed-local.mjs",
+    "test:rules": "node tests/emulators.mjs rules",
+    "test:integration": "node tests/emulators.mjs integration",
+    "test:mcp": "node tests/emulators.mjs mcp",
+    "test:auth": "node tests/emulators.mjs auth",
+    "test:e2e": "node tests/emulators.mjs e2e",
+    "verify": "npm run build && npm test && node tests/emulators.mjs verify"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "firebase": "12.19.0",
+    "mobx": "6.12.0",
+    "mobx-react": "9.2.0",
+    "mobx-utils": "6.0.8",
+    "lodash-es": "4.18.1",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "8.3.2",
+    "@vitejs/plugin-react": "6.1.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "firebase-tools": "15.32.1",
+    "@firebase/rules-unit-testing": "5.0.2",
+    "@playwright/test": "1.63.0",
+    "@types/lodash-es": "4.17.12"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.5",
+    "gaxios": {
+      "uuid": "11.1.1"
+    }
+  }
+}

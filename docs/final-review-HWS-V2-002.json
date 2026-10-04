@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "task_id": "HWS-V2-002",
+  "status": "BLOCKED",
+  "dimensions": {
+    "requirement_match": {
+      "status": "FAILED",
+      "summary": "First live Gantt source-reuse slice verified; issue/editor/full M0-M3 scope remains incomplete",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "security": {
+      "status": "PASSED",
+      "summary": "Bounded local frontend delta keeps backend authority unchanged; source licenses preserved and runtime audit zero; release remains blocked separately",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Fresh independent cycle2 no new actionable defect; reviewer independently reran ten unit groups",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Zoom/refresh scoped store regression and previous auth/editor/context regressions pass within bounded local scope",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "No unrestricted mutations or new external effect; observer cleanup and API readback flow reviewed",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "production_readiness": {
+      "status": "FAILED",
+      "summary": "Full content source parity calendar actual clients and release evidence incomplete; unborn HEAD ledger cannot certify",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Substantial chart/sidebar adaptations disabled capabilities and dependency compatibility deviation documented",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "HWS002-R1",
+      "severity": "MEDIUM",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "src/lib/plane/timeline-context.tsx",
+      "summary": "Store recreation reset selected zoom on unrelated parent renders",
+      "resolution": "Stable per-project store with atomic observable snapshots and identity key; unit and Quarter inspector Refresh browser regressions pass",
+      "evidence_refs": [
+        "docs/evidence/plane-candidate-files.json",
+        "docs/evidence/plane-verification-summary.json",
+        "docs/plane-reuse-manifest.json",
+        "docs/product-content-review.md"
+      ]
+    }
+  ],
+  "residual_risks": [
+    "Full source issue/editor ports and M0-M3 remain incomplete",
+    "Full Product Language Gate blocked",
+    "Ten development-tool advisories remain",
+    "Configurable project calendar absent; local completion dates explicitly UTC"
+  ],
+  "limitations": [
+    "Independent reviewer ran unit tests, full browser/emulator executions are parent-reported",
+    "Upstream full application runtime and actual coding clients/providers NOT RUN",
+    "No Git commit; commit-bound runtime final review rejects unborn HEAD",
+    "No push merge deployment billing or production activity"
+  ]
+}

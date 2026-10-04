@@ -1,0 +1,82 @@
+[
+  {
+    "operation": [
+      "criterion",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "criterion",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "criterion",
+      "record"
+    ],
+    "statusCode": 1,
+    "error": "criterion status must be one of: VERIFIED, IN_PROGRESS, PENDING, BLOCKED, FAILED, NOT_APPLICABLE"
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 0,
+    "error": null
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 1,
+    "error": ""
+  },
+  {
+    "operation": [
+      "check",
+      "record"
+    ],
+    "statusCode": 1,
+    "error": ""
+  },
+  {
+    "operation": [
+      "criterion",
+      "record"
+    ],
+    "status": "PENDING recorded for actual clients/providers",
+    "note": "Ledger uses PENDING for NOT RUN acceptance; BLOCKED check records emit exit 1 while retaining valid record; see rendered task report."
+  }
+]

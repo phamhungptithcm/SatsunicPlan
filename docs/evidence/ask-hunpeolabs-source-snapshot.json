@@ -1,0 +1,37 @@
+{
+  "sourceRoot": "/Users/hunpeo97/Desktop/Workspace/Coder/HunpeoLabs",
+  "baseCommit": "3f9997ea31670ffe7611cf280c98dd9e6eb5bfab",
+  "sourceState": "Ask component and support files are untracked WIP; hashes bind current bytes, not the base commit",
+  "entries": [
+    {
+      "path": "components/ask-hunpeolabs.tsx",
+      "sha256": "e8e9dfca5fff1641441fbe3bf83db9065cd752cfa5e84f467dedc8b940eff80e",
+      "proposedUse": "UI source port"
+    },
+    {
+      "path": "components/ask-hunpeolabs.module.css",
+      "sha256": "9cf59755f6a38d2f0a81560fde21f53e1af87e410e953fff60ced18b98ecc147",
+      "proposedUse": "UI source port"
+    },
+    {
+      "path": "lib/ask/stream.ts",
+      "sha256": "a9cee8ae3b005e9801d910044c9456c06a7b6b1c197ca9d585e0581fded321bd",
+      "proposedUse": "behavior reference; no provider import"
+    },
+    {
+      "path": "lib/ask/deadline.ts",
+      "sha256": "e25a5e18eec95512861e68eaa18af2e9870248fc6eb41df13f8c693df694fb89",
+      "proposedUse": "behavior reference; no provider import"
+    },
+    {
+      "path": "lib/ask/contracts.ts",
+      "sha256": "4c3ee88c93a86ce26474cc677c304ae734ab1ce72499f9540446a31ef304581a",
+      "proposedUse": "behavior reference; no provider import"
+    },
+    {
+      "path": "docs/operations/ask-hunpeolabs.md",
+      "sha256": "785c15e193e72a48890b5d3052e97ee1582fb425014cde54e3cbfdbb26fb0565",
+      "proposedUse": "behavior reference; no provider import"
+    }
+  ]
+}

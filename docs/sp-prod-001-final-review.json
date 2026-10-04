@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "task_id": "SP-PROD-001",
+  "status": "BLOCKED",
+  "local_code_recommendation": "APPROVED",
+  "reviewer": "independent runtime_review agent",
+  "cycle": 2,
+  "candidate_files": {
+    "functions/src/adapters/firebase/runtime-config.ts": "5083138e39fd5c8bc6f946ab5e49b3431620c55af89647d189cf4ba31b0d0235",
+    "functions/src/adapters/firebase/http.ts": "f01c786dec1c2403c981b81711c151a8f4a50d1ef3959e7c4da2a09db7a18201",
+    "functions/src/auth/identity.ts": "119c5e4dc2aba7cb2ebff11ac8d21c232fd0f4228075b5df37690d7196f4c73a",
+    "src/lib/firebase/config.ts": "ca84510affd290b89f1c7ef2d31b5306946b550bd5d6f9815f74a9467b22daf9",
+    "src/lib/firebase/client.ts": "e6f45fbdf093ffd1e0154df09ed9b19fc54b37940f42f1336f72b07ed72a8a92",
+    "src/app/main.tsx": "f9c1f995f7d1f0b68cd6eea2cd9184cb1c6db38dde40faff5919bb46dad1eb26",
+    "tests/firebase-config.test.ts": "e5ad6a029e233bd731c8abb828cc645f3c78ba845383d1206139bfc45a4fe44a",
+    "tests/firebase-runtime.test.ts": "a459a70a31132b6020581dab0cea755b672e624b50432af6dddbc269a04cf504",
+    "tests/firebase-handler.test.ts": "5b21e57c54d01fd59e4f0cd36210254c5c80f4b8603b9cbe3e19f5e0aa43e2d3",
+    "tests/auth.test.ts": "a4469f056f4f778287d2dfe2d84397d27c77643c473e6132a7cfa5dba629e9b3",
+    "tests/fixtures.ts": "4619b8782d05e48f69857b09cfaa68ee69905ad0181cd650649ea3032673fe51",
+    "tests/rules.test.ts": "1eb16cb12d55c30c68a45d7203d1d888eacb5e729a6025f6ae01ad8df49491f8",
+    "tests/mcp.test.ts": "521b225d93b46debaf9298153e4694f348d8b7213d657ee9e46cef0ac2af77ff",
+    "tests/runtime-backend.mjs": "32d59352e7d30c28dd5f12e718f9f7937bea334b37f3b5453a7873fe4e5a3ec5",
+    "tests/cloud-runtime-browser.mjs": "0e7fefba84d25510ae6f7a4ec5562431d03b331dff31b9307189eae982bcaf19",
+    "package.json": "146a066bf23db09f694bad45bdd2fb9220f548b406ec3abdae77763422eeceb3",
+    "firebase.cloud.json": "4177556464bb28aae5cb15fccd74674912f00972ea8c1e2e9a1310ea633c20ae",
+    ".env.cloud.example": "eb13c752a42ffb8a2a3ad22b1f3b2cc1376bfdaefd725352332d0d19481d233b"
+  },
+  "dimensions": {
+    "requirement_match": {
+      "status": "PASSED",
+      "summary": "Approved local slice6 implemented; not full master completion.",
+      "evidence_refs": [
+        "docs/approval-SP-PROD-001.md",
+        ".ai/local/sp-prod-001-candidate.json"
+      ]
+    },
+    "security": {
+      "status": "PASSED",
+      "summary": "Local exact identity/host/origin, channel and revoked-token denial; cloud MCP locked.",
+      "evidence_refs": [
+        "tests/firebase-runtime.test.ts",
+        "tests/firebase-handler.test.ts",
+        "tests/auth.test.ts",
+        "docs/evidence/sp-prod-001-backend-node22.log"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Node22 build/unit/backend; independently reviewed source hashes.",
+      "evidence_refs": [
+        "package.json",
+        "docs/sp-prod-001-completion.md"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Mixed config, credentials, membership, audience, revoke and simulated UI failures.",
+      "evidence_refs": [
+        "tests/auth.test.ts",
+        "docs/evidence/sp-prod-001-browser/results.json"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "Bodyless method denial, generic unavailable errors, uncertainty-preserving UI and credential-free SDK discovery.",
+      "evidence_refs": [
+        "functions/src/adapters/firebase/http.ts",
+        "src/lib/firebase/client.ts"
+      ]
+    },
+    "product_language": {
+      "status": "PASSED",
+      "summary": "Changed English content, eight principles and current rendered synthetic proxy evidence.",
+      "evidence_refs": [
+        "docs/sp-prod-001-product-content-review.md"
+      ]
+    },
+    "production_readiness": {
+      "status": "NOT_RUN",
+      "summary": "No live signed-token/ingress/provider/operations/restore/client/full-master acceptance; no deployment authority.",
+      "evidence_refs": [
+        "docs/firebase-readiness-gap.md",
+        "docs/sp-prod-001-completion.md"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Local evidence and activation separated from release permission; limitations recorded.",
+      "evidence_refs": [
+        "docs/satsunicplan-firebase-runbook.md"
+      ]
+    }
+  },
+  "review_cycles": [
+    {
+      "cycle": 1,
+      "local_recommendation": "APPROVED_WITH_MINOR_COMMENTS",
+      "production_status": "BLOCKED",
+      "finding": "Low: missing timestamp token-revocation evidence"
+    },
+    {
+      "cycle": 2,
+      "local_recommendation": "APPROVED",
+      "production_status": "BLOCKED",
+      "fix": "revokeRefreshTokens then old-token401; Node22 backend12/12 PASS",
+      "unresolved_code_findings": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "low",
+      "status": "FIXED",
+      "location": "tests/auth.test.ts",
+      "summary": "Explicit timestamp token revocation regression added and verified locally."
+    }
+  ],
+  "residual_risks": [
+    "Automated validator dotfile normalization fails1/18 paths despite explicit human approval.",
+    "Existing main-chunk size warning.",
+    "Default full browser/emulator journey not rerun because shared ports occupied."
+  ],
+  "limitations": [
+    "Browser/Auth/API proxy is synthetic; unsigned emulator tokens do not prove live Firebase signatures.",
+    "Runtime ledger CLI unavailable; no receipt.",
+    "Unborn HEAD prevents commit-bound release evidence.",
+    "Full master/product/provider/client/operations acceptance incomplete."
+  ]
+}

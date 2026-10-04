@@ -1,0 +1,26 @@
+{
+  "owner": "01a1080f-686d-71d0-8067-3e1d40d32505",
+  "plan": "SP-UI-001 v1",
+  "status": "UI source stable; report saved; formal review BLOCKED: no Git HEAD and browser recovery unavailable",
+  "notified": [
+    "01a1043f-eb04-7e72-a04e-d093d1761543",
+    "01a1043f-20d2-7153-a7c3-9a05d2da496e"
+  ],
+  "applicationEdits": true,
+  "readSnapshotSha256": {
+    "src/app/main.tsx": "d2ef0b22586143b692c66b155ee335dc844a8b8208fb13ea7826eee3d81e2089",
+    "src/styles/app.css": "8ee28fd7cd7b102c28afe97091c6fec802041f977ea3302e69cfdb96622584bb",
+    "src/features/roadmap/PlaneRoadmap.tsx": "b9ba1633eaf6d8df548bfe754e1a0a3d19d49d23f661a62562db65ad2a71e91e",
+    "index.html": "c839729496962e2b5533f44b35be83fb63c45d9a97ed850a97724a95398f4179",
+    ".env.example": "370c42540acdc6bd3386eb8e5fc2096cfde25fed07f20a4fbe867b766b3bbc20"
+  },
+  "sharedFilePolicy": "main.tsx serialized handoff; reread hashes and narrow patches; never overwrite WIP",
+  "serviceHealth": "Detached Vite and all four local emulators ready; preserved Firestore imported; two fixed synthetic Auth identities restored. HTTP health verified.",
+  "currentSha256": {
+    "src/app/main.tsx": "e85a61cd27cf4393972e6e975d1f04a0f84fa01b2acd02fc67878a47d771636e",
+    "src/styles/app.css": "b7c1887f7f76efedb66a4acf557551aa40c4322926d75ac4c3a663bd8eccf6db",
+    "src/features/roadmap/PlaneRoadmap.tsx": "5129b12b85509f284854969f76626b710dd7b82fd2e00b582c5ae2dc8b7cf250",
+    "index.html": "29b726b488df3f45d0ff01b2fa2727d4188d9802d1d0d11ef9fe7fe4814a4c75",
+    ".env.example": "10e2703d36eb3f3e29a4832591e9091b22e9c9d0b7bdeb319479e4cb76e8feab"
+  }
+}

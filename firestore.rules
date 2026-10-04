@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function member(w,p) {
+   return request.auth != null
+    && get(/databases/$(database)/documents/workspaces/$(w)/members/$(request.auth.uid)).data.active == true
+    && get(/databases/$(database)/documents/workspaces/$(w)/projects/$(p)/members/$(request.auth.uid)).data.active == true;
+  }
+  match /workspaces/{w}/projects/{p}/work/{id} { allow read: if member(w,p); allow write: if false; }
+  match /workspaces/{w}/projects/{p}/documents/{id} { allow read: if member(w,p); allow write: if false; }
+  match /{path=**} { allow read,write: if false; }
+ }
+}

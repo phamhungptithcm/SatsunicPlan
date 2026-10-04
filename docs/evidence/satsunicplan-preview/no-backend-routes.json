@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/api",
+    "status": 404
+  },
+  {
+    "path": "/mcp",
+    "status": 404
+  }
+]

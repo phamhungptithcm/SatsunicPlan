@@ -1,0 +1,33 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "executions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "taskId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "checkpoints",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "executionId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdDate",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

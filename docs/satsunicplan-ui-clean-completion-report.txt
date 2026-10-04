@@ -1,0 +1,76 @@
+AI Agent Kit — Final Task Report
+Task: SP-UI-002
+State: DISCOVER
+Commit: Unavailable
+Generated: 2026-10-04T19:09:01.365Z
+
+Progress: 33% — 1/3 applicable criteria verified
+
+Usage & Cost
+  Tokens used: Unavailable — no_usage_evidence
+  Estimated cost: Unavailable
+
+Completed
+  - [VERIFIED] 1. Technical shell labels removed and product credit present
+
+Remaining
+  - [IN_PROGRESS] 2. Verified account name avatar and accessible sign out
+  - [BLOCKED] 3. Build and in-context review current
+
+Quality
+  - build: PASSED — Source/build evidence retained; browser and formal review limitations explicit.
+  - final-implementation-review: NOT_RUN — Final implementation review is NOT_RUN.
+  - lint: NOT_RUN — No current evidence recorded.
+  - product-content: BLOCKED — Source/build evidence retained; browser and formal review limitations explicit.
+  - security: PASSED — Source/build evidence retained; browser and formal review limitations explicit.
+  - tests: NOT_RUN — No current evidence recorded.
+  - typecheck: NOT_RUN — No current evidence recorded.
+
+Final Implementation Review
+Decision: NOT_RUN
+Review cycles: 0
+Reviewed:
+  - No review dimensions recorded.
+Findings and fixes:
+  - No findings recorded.
+Residual risks:
+  - None recorded.
+Limitations:
+  - None recorded.
+
+Engineering Team
+  Type: ASSURANCE_WORKCELL
+  Execution: UNSELECTED
+  Status: NOT_READY
+  Review independence: VERIFIED
+  Shared context: READY
+  Handoffs: 0
+  Open conflicts: 0
+
+Architecture Pulse
+  Evidence: NOT_RUN
+  Outcome: Unavailable
+  Artifact: Unavailable
+  Coverage: Unavailable
+  Confidence: Unavailable
+
+Code Status
+  Git worktree: UNKNOWN
+  Code health is not fully verified.
+
+Production Readiness: NOT_READY
+  Production readiness is fail-closed until every blocker has current evidence.
+
+Blockers
+  - Task state is DISCOVER; REVIEW_READY or RELEASED is required.
+  - Acceptance criteria are not 100% verified.
+  - Git worktree is UNKNOWN.
+  - Final implementation review is NOT_RUN.
+  - Final review requires authenticated independence and resolved execution evidence for production readiness.
+  - Skill routing is ABSTAIN (NO_MATCH).
+  - Agent workcell is NOT_READY; the latest independent review must complete cleanly.
+  - Required quality gate final-implementation-review is NOT_RUN.
+  - Required quality gate lint is NOT_RUN.
+  - Required quality gate product-content is BLOCKED.
+  - Required quality gate tests is NOT_RUN.
+  - Required quality gate typecheck is NOT_RUN.

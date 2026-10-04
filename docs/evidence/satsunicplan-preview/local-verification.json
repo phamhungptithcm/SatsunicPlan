@@ -1,0 +1,37 @@
+{
+  "mode": "local",
+  "origin": "http://127.0.0.1:64859",
+  "configuration": "hosting only, explicit site, no rewrites",
+  "checks": [
+    {
+      "file": "index.html",
+      "sha256": "3f7ca9a2b9ab2e43fce18706bd03e121c56063add8c91af9a0ad15701073db49",
+      "headers": "matched"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "3b07991d0a8c1bf229083babd8ec933a74d8a71c89f275005b44907c61c4f850",
+      "headers": "matched"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "ariaSnapshot": "- main:\n  - region \"SatsunicPlan\":\n    - heading \"SatsunicPlan\" [level=1]\n    - paragraph: Đang chuẩn bị triển khai\n    - paragraph: Bản xem trước này chưa mở đăng nhập hoặc dữ liệu dự án."
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "ariaSnapshot": "- main:\n  - region \"SatsunicPlan\":\n    - heading \"SatsunicPlan\" [level=1]\n    - paragraph: Đang chuẩn bị triển khai\n    - paragraph: Bản xem trước này chưa mở đăng nhập hoặc dữ liệu dự án."
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "ariaSnapshot": "- main:\n  - region \"SatsunicPlan\":\n    - heading \"SatsunicPlan\" [level=1]\n    - paragraph: Đang chuẩn bị triển khai\n    - paragraph: Bản xem trước này chưa mở đăng nhập hoặc dữ liệu dự án."
+    }
+  ],
+  "textScaling200Percent": "no horizontal overflow",
+  "pageErrors": [],
+  "externalRequests": 0
+}

@@ -1,0 +1,12 @@
+requirement,status,evidence,limitation
+Source-derived HunpeoLabs UI,PASS,docs/evidence/ask-reuse-manifest.json,Source WIP hash-bound; not deployed-site parity
+Original CSS preserved,PASS,tests/ask.test.ts,Integration styles are separate
+Real local help navigation,PASS,tests/browser.spec.ts,No inference or project analytics
+No provider or model keys,PASS,Independent source review,Future AI setup outside scope
+Cancellation timeout retry bounded history,PASS,tests/ask.test.ts and labeled adapter fixtures,Fault injection is not a real provider
+Account project reload privacy,PASS,Actual app browser isolation case,Observed denial only; not continuous membership polling
+Accessibility subset,PASS,CDP tree keyboard text-scaling fixture,Not screen-reader or real browser zoom certification
+Complete accessibility assurance,NOT RUN,docs/ask-product-content-review.md,Contrast screen-reader cross-browser remain
+Current full browser regression,PASS,/tmp/hws-ask-browser-ready.log,Seven tests on recovered verified local services; no real provider
+Independent final release receipt,BLOCKED,docs/final-review-HWS-V2-003.json,No Git HEAD; production evidence incomplete
+Whole M0-M3 product completion,BLOCKED,docs/progress.md,Ask pilot does not satisfy remaining master requirements

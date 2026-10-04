@@ -1,0 +1,48 @@
+{
+  "kind": "SIMULATED_AUTH_API_ACTUAL_BUILD_UI",
+  "liveFirebaseAcceptance": "NOT_TESTED",
+  "results": [
+    {
+      "width": 1440,
+      "states": [
+        "offline",
+        "invalid",
+        "disabled",
+        "temporary"
+      ],
+      "keyboardRefresh": true,
+      "emulatorRequests": false,
+      "cloudGrantIssued": false,
+      "pageErrors": [],
+      "unexpectedExternalHosts": []
+    },
+    {
+      "width": 390,
+      "states": [
+        "offline",
+        "invalid",
+        "disabled",
+        "temporary"
+      ],
+      "keyboardRefresh": true,
+      "emulatorRequests": false,
+      "cloudGrantIssued": false,
+      "pageErrors": [],
+      "unexpectedExternalHosts": []
+    },
+    {
+      "width": 320,
+      "states": [
+        "offline",
+        "invalid",
+        "disabled",
+        "temporary"
+      ],
+      "keyboardRefresh": true,
+      "emulatorRequests": false,
+      "cloudGrantIssued": false,
+      "pageErrors": [],
+      "unexpectedExternalHosts": []
+    }
+  ]
+}

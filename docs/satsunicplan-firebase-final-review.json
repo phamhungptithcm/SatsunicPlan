@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "task_id": "SATSUNICPLAN-FIREBASE-001",
+  "status": "PASSED",
+  "review_scope": "Local phase 1; not production release approval",
+  "candidate_sha256": "c130fe3e41a45486d1478420bd95f2afc89edc133d3ba3c7d5e6868bec4dbc8a",
+  "cycle": 2,
+  "dimensions": {
+    "requirement_match": {
+      "status": "PASSED",
+      "summary": "Approved phase 1 only: SatsunicPlan naming, explicit satsunicplan cloud alias, validated config preparation, isolated component selectors, staged runbook; no remote operations.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "security": {
+      "status": "PASSED",
+      "summary": "Emulator loopback/project isolation and cloud startup guard remain; backend boundary unchanged; no credentials, dependencies, IAM/billing or cloud seed changes.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Strict TypeScript build and 19 unit tests pass; matches existing source patterns. Node 25 locally, Node 22 deployment support remains unverified.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Tests reject missing/invalid settings, wrong project/mode/domain, non-loopback emulators, broad selectors and execute flags. Preparation file/config errors return CLI failure.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "No settings values are printed in validation errors; cloud mode rejects before Firebase initialization. Missing files/invalid JSON propagate to CLI nonzero exit. No new timers/listeners/resources.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "production_readiness": {
+      "status": "PASSED",
+      "summary": "Phase 1 preparation reviewed; cloud remains NOT_READY by design. Owner/provider/site/public app settings/region, exact release artifacts, prior resource versions and rollback must be verified before separate approved releases.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "product_content": {
+      "status": "NOT_APPLICABLE",
+      "summary": "NOT_APPLICABLE: no rendered product strings, controls or displayed-data meanings changed. Existing SatsunicPlan UI and local-only text preserved; README/runbook are developer documentation. Startup configuration exceptions are not rendered UI.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Preparation is intentionally non-executing; cloud config and selectors do not constitute release approval. Synthetic project retained for test safety; package/backend internal identifiers preserved.",
+      "evidence_refs": [
+        "npm run build: exit 0; client TypeScript/Vite and Functions TypeScript",
+        "npm test: exit 0; 19 passed",
+        "tests/auth.test.ts: exit 0; 1 passed against existing verified loopback emulators",
+        "firebase:prepare hosting: PREPARATION_ONLY; executesDeployment false",
+        "docs/satsunicplan-firebase-candidate.json"
+      ]
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "status": "BLOCKED",
+      "findings": [
+        "F1: Auth domain validator allowed invalid DNS labels. Tightened label/length validation and added rejection tests."
+      ],
+      "verification": "Fresh build and npm test: 19 passed after fix."
+    },
+    {
+      "cycle": 2,
+      "status": "PASSED",
+      "findings": [],
+      "verification": "Complete scoped source/config/runbook review plus post-fix build/unit evidence and local Auth regression."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "medium",
+      "location": "src/lib/firebase/config.ts",
+      "status": "FIXED",
+      "evidence": "Rejection cases for double dots, edge hyphens, overlong labels and uppercase localhost pass."
+    }
+  ],
+  "residual_risks": [
+    "Existing Vite main chunk exceeds 500 kB warning; no new dependency/refactor performed.",
+    "Default emulator-start command cannot start a second instance on occupied ports. Direct Auth suite passed on existing verified instance.",
+    "Existing emulator instance provenance not independently established; local Auth result is a regression signal, not full backend candidate certification."
+  ],
+  "limitations": [
+    "Repository intelligence DEGRADED: both indexes stale, latest health checks passed; bounded source fallback used.",
+    "Approval validator rejects DEGRADED despite repository policy explicitly permitting fallback; human plan approval and scope separately recorded.",
+    "Runtime package/CLI unavailable; review and report recorded as files; runtime receipts not created.",
+    "No Git commit exists; evidence bound by source/artifact hashes.",
+    "No full e2e, Node 22 runtime, provider authentication or cloud release evidence."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task": "HWS-V2-002",
+  "candidate": "uncommitted working tree; unborn HEAD",
+  "manifest": "plane-candidate-files.json",
+  "verifiedAt": "2026-10-04T01:56:44.155369+00:00",
+  "source": {
+    "sha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+    "entries": 21,
+    "byteIdentical": 14,
+    "adapted": 7,
+    "referenceAppRuntime": "NOT RUN"
+  },
+  "build": "PASS",
+  "unit": {
+    "groups": 10,
+    "status": "PASS",
+    "timezone": "America/Chicago"
+  },
+  "emulator": {
+    "groups": 12,
+    "status": "PASS",
+    "scope": "Auth/Firestore/Functions/Storage demo + official MCP SDK harness"
+  },
+  "chrome": {
+    "tests": 2,
+    "status": "PASS",
+    "realInstalledChrome": true,
+    "zoomPersistence": "PASS",
+    "accountEditorRegressions": "PASS",
+    "mobileVisibleBar": "PASS"
+  },
+  "audit": {
+    "runtime": 0,
+    "tooling": 10
+  },
+  "backendAuthority": {
+    "sourceFiles": 7,
+    "changed": 0
+  },
+  "fullM0M3": "INCOMPLETE",
+  "sourceIssueEditorPort": "PENDING",
+  "actualClientsProviders": "NOT RUN",
+  "production": "NOT_READY",
+  "independentDeltaReview": "cycle2 no new actionable defect in bounded review; reviewer independently ran 10 unit PASS; overall full-product BLOCKED"
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "id": "SP-UI-002",
+  "goal": "Clean SatsunicPlan shell and sidebar account row without changing auth or Ask",
+  "acceptance_criteria": [
+    "Technical shell labels removed and product credit present",
+    "Verified account name avatar and accessible sign out",
+    "Build and in-context review current"
+  ],
+  "state": "DISCOVER",
+  "created_at": "2026-10-04T19:07:28.964Z",
+  "updated_at": "2026-10-04T19:07:29.018Z",
+  "capability": {
+    "allowed_tools": [
+      "read",
+      "edit"
+    ],
+    "allowed_paths": [
+      "src/app/main.tsx",
+      "src/styles/app.css",
+      "docs/satsunicplan-ui-clean-*"
+    ],
+    "network_domains": [],
+    "max_risk": "low",
+    "max_actions": 100,
+    "expires_at": "2026-10-05T19:07:28.964Z",
+    "approval_hash": null,
+    "repository_commit": null,
+    "policy_revision": "4840e53081dc27fbb941753ace1670fa3c9028ce8113b1add7f3c3cca3492356",
+    "agent_adapter": "unknown"
+  },
+  "capability_hash": "cbfb5dba4b8dd2a9162b2191da86a251ed7146521134628d2d2c5fd477b38407",
+  "action_count": 0,
+  "context": {
+    "facts": [],
+    "assumptions": []
+  },
+  "skill_routing": {
+    "status": "ABSTAIN",
+    "reason": "NO_MATCH",
+    "config_id": "ai-agent-kit-canonical-router-v1",
+    "config_hash": "c4297894c1da0d86721abbdb9a1ba161ed05f7d8550cc39c685e17de99c87d22",
+    "route_id": null,
+    "skill": null,
+    "suggested_route": "start-task",
+    "confidence": "low",
+    "score": 0,
+    "margin": 0,
+    "entry_action": null,
+    "product_id": null,
+    "reason_codes": []
+  },
+  "execution_context": null,
+  "plan": {
+    "revision": 0,
+    "trigger": "task-created",
+    "steps": []
+  },
+  "transitions": [],
+  "orchestration": {
+    "status": "PLANNED",
+    "team_type": "ASSURANCE_WORKCELL",
+    "team_hash": "fa8cb01ed62ca7d8bddc62322c08ae97d38f671f77db81c2af4cd17a9f1a463f"
+  }
+}

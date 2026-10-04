@@ -1,0 +1,325 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/25.9.0_1/bin/node",
+      "/Users/hunpeo97/Desktop/Workspace/Coder/SatsunicPlan/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "tests/playwright.config.ts"
+    ],
+    "configFile": "/Users/hunpeo97/Desktop/Workspace/Coder/SatsunicPlan/tests/playwright.config.ts",
+    "rootDir": "/Users/hunpeo97/Desktop/Workspace/Coder/SatsunicPlan/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/hunpeo97/Desktop/Workspace/Coder/SatsunicPlan/tests/.browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/hunpeo97/Desktop/Workspace/Coder/SatsunicPlan/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/evidence/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "browser.spec.ts",
+      "file": "browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Browser + SDK emulator journey: create → refresh → contract approval → claim/context/submit → human review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:55.144Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-53beb248509bf4167fb9",
+          "file": "browser.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "Editor ignores delayed response after choosing New document",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:22.644Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-25e69a7c28ccd1590601",
+          "file": "browser.spec.ts",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "Actual Workspace Ask: source layout, motion, help navigation, privacy, modal coexistence and mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24145,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:25.883Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-c87de2a07e6d7c9cc00b",
+          "file": "browser.spec.ts",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "Actual Workspace Ask: project/account/reload isolation and observed membership revocation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5210,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:50.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-5a930cd1340bb3b28515",
+          "file": "browser.spec.ts",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "Isolated target adapter fixture: Stop, Retry, timeout, late answer and scope cancellation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19759,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:55.278Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-2494a44bb909afbdcc42",
+          "file": "browser.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "Isolated target adapter fixture: IME, rapid motion reversal, reading position and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2704,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:15.057Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-e3db9ea693f634f8aec8",
+          "file": "browser.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "Isolated target adapter fixture: accessibility tree, keyboard containment and 200 percent text scaling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:17.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-d14b16f3c7fc886f59e0",
+          "file": "browser.spec.ts",
+          "line": 106,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T18:53:48.355Z",
+    "duration": 92760.88799999999,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

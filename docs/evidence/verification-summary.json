@@ -1,0 +1,32 @@
+{
+  "candidate": "uncommitted working tree; no HEAD",
+  "filesManifest": "candidate-files.json",
+  "verifiedAt": "2026-10-04T01:08:11.614957+00:00",
+  "build": "PASS",
+  "domain": {
+    "status": "PASS",
+    "groups": 5
+  },
+  "emulator": {
+    "status": "PASS",
+    "groups": 12
+  },
+  "chrome": {
+    "status": "PASS",
+    "journeys": 2,
+    "mobileOverlapRegression": "PASS",
+    "accountStateRegression": "PASS",
+    "editorDelayedResponseRegression": "PASS"
+  },
+  "client": "official MCP SDK test harness 1.32.0; actual clients NOT RUN",
+  "firebase": "synthetic demo Auth/Firestore/Functions/Storage only",
+  "runtime": "Node 25.9 host; configured Node 22 NOT RUN",
+  "audit": {
+    "runtime": 0,
+    "tooling": 10,
+    "toolingHigh": 7,
+    "toolingModerate": 3
+  },
+  "fullM0M3": "INCOMPLETE",
+  "production": "NOT_READY"
+}

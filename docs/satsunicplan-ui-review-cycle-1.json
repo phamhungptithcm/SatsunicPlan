@@ -1,0 +1,23 @@
+{
+  "task_id": "SP-UI-001",
+  "status": "BLOCKED",
+  "findings": [
+    {
+      "severity": "Medium",
+      "location": "src/styles/app.css mobile .sidebar nav",
+      "finding": "Mac overlay horizontal scrollbar covered nav labels and prevented reliable pointer selection during mobile browser walkthrough.",
+      "fix": "Scoped nav hides scrollbar chrome while keeping horizontal scrolling; minimum47px row and bottom inset prevent clipping.",
+      "verification": "Pending rerun of mobile nav walkthrough."
+    },
+    {
+      "severity": "Low",
+      "location": "src/styles/app.css status selectors",
+      "finding": "Initial In Progress/In Review selectors did not match exact domain enum casing.",
+      "fix": "Corrected to In progress/In review before build.",
+      "verification": "Source enum inspected and15 unit checks passed."
+    }
+  ],
+  "limitations": [
+    "Existing Work no-result message recommends creating an item despite active filter; unchanged text outside branding/roadmap scope, not certified by this UI copy review."
+  ]
+}

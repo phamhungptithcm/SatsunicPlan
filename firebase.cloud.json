@@ -1,0 +1,20 @@
+{
+  "functions": [{"source": "functions", "codebase": "workspace", "runtime": "nodejs22"}],
+  "firestore": {"rules": "firestore.rules", "indexes": "firestore.indexes.json"},
+  "storage": {"rules": "storage.rules"},
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase*.json", "**/.*", "**/node_modules/**"],
+    "headers": [{"source": "/api{,/**}", "headers": [
+      {"key": "Cache-Control", "value": "no-store"}
+    ]}, {"source": "**", "headers": [
+      {"key": "X-Content-Type-Options", "value": "nosniff"},
+      {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
+    ]}],
+    "rewrites": [
+      {"source": "/api", "function": {"functionId": "api", "region": "us-central1"}},
+      {"source": "/api/**", "function": {"functionId": "api", "region": "us-central1"}},
+      {"source": "**", "destination": "/index.html"}
+    ]
+  }
+}

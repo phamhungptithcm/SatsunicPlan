@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "task_id": "HWS-V2-001",
+  "status": "BLOCKED",
+  "dimensions": {
+    "requirement_match": {
+      "status": "FAILED",
+      "summary": "Full M0-M3 and composite A01-A64 remain incomplete",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "security": {
+      "status": "FAILED",
+      "summary": "Local boundary checks pass; tooling advisories and public OAuth release gaps remain",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Strict compilation and fresh independent bounded cycle-3 source review found no new actionable defect",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Atomic race, expiry, drift, revoke, scoped errors and editor delayed-response regressions pass within tested scope",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "Safe HTTP/domain errors and UI recovery labels source reviewed; tested denied boundaries pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "production_readiness": {
+      "status": "FAILED",
+      "summary": "Candidate is emulator-only, no actual clients/providers, import pipeline or release evidence",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Bounded coverage and missing product functionality explicitly documented",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json",
+        "docs/progress.md",
+        "docs/product-content-review.md"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "HIGH",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "functions/src/application/workspace.ts",
+      "summary": "Contract approval reopened execution lifecycle",
+      "resolution": "Approve only permissible pre-execution statuses; progress/review/Done negatives pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json"
+      ]
+    },
+    {
+      "id": "R2",
+      "severity": "HIGH",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "functions/src/application/workspace.ts",
+      "summary": "Expiry clock was captured before transaction retries",
+      "resolution": "Clock captured per callback and expiry checked before write phase; advancing-clock regression pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json"
+      ]
+    },
+    {
+      "id": "R3",
+      "severity": "MEDIUM",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "functions/src/application/workspace.ts",
+      "summary": "Latest history selected after bounded unordered query",
+      "resolution": "Order before limit, explicit coverage, composite indexes; greater-than-31 regression pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json"
+      ]
+    },
+    {
+      "id": "R4",
+      "severity": "MEDIUM",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "src/app/main.tsx",
+      "summary": "Account/project scope retained stale editor and async state",
+      "resolution": "Clear scoped state and guard delayed responses by scope epoch; Chrome account-switch regression pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json"
+      ]
+    },
+    {
+      "id": "R5",
+      "severity": "MEDIUM",
+      "status": "FIXED",
+      "category": "correctness",
+      "location": "src/app/main.tsx",
+      "summary": "Document selection allowed old body to overwrite a fresh draft",
+      "resolution": "Separate selection epoch, clear body, disable loading input; delayed-response Chrome regression pass",
+      "evidence_refs": [
+        "docs/evidence/candidate-files.json",
+        "docs/evidence/verification-summary.json"
+      ]
+    }
+  ],
+  "residual_risks": [
+    "Full Product Language Gate BLOCKED",
+    "Development-tool dependency advisories remain",
+    "No full Plane source parity or A01-A64 certification"
+  ],
+  "limitations": [
+    "Unborn repository has no HEAD; runtime commit-bound review cannot be stored",
+    "Actual coding clients and providers NOT RUN",
+    "No live Firebase, push, merge, deployment or billing",
+    "Independent review was read-only and did not independently rerun parent tests"
+  ]
+}

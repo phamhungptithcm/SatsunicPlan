@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "task_id": "HWS-V2-003",
+  "status": "BLOCKED",
+  "dimensions": {
+    "requirement_match": {
+      "status": "PASSED",
+      "summary": "Owner-approved source UI port; hashes match. Whole master remains partial.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "security": {
+      "status": "PASSED",
+      "summary": "Independent review verified escaped answers, allowlisted navigation, bounds, cancellation, scoped privacy and no provider adapter.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Independent reviewer and root unit19 PASS, strict build PASS.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Current seven-test full browser PASS; actual local app journey/isolation plus labeled cancellation/timeout/IME/motion fixtures.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "Current full browser PASS includes observed-denial teardown; adapter error/retry/deadline/cleanup separately labeled fixtures.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "production_readiness": {
+      "status": "NOT_RUN",
+      "summary": "Public OAuth/real clients/providers/Node22/legal/accessibility and commit-bound receipt incomplete.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Source fixture separated from provider; local help explicitly discloses no AI; Firebase phase1 work belongs to other chat.",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/evidence/ask-current-candidate.json",
+        "docs/evidence/ask-reuse-manifest.json",
+        "/tmp/hws-ask-unit-current.log",
+        "/tmp/hws-ask-build-current.log"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "ASK-EVIDENCE-1",
+      "severity": "medium",
+      "status": "OPEN",
+      "location": "docs/ask-product-content-review.md",
+      "summary": "Accessibility assurance incomplete; keyboard/AX and text-scaling subset now passes but screen reader and contrast remain NOT_RUN.",
+      "category": "verification",
+      "evidence_refs": [
+        "docs/ask-product-content-review.md",
+        "docs/verification.md"
+      ]
+    },
+    {
+      "id": "ASK-EVIDENCE-2",
+      "severity": "medium",
+      "status": "FIXED",
+      "location": "docs/verification.md",
+      "summary": "Full browser regression on final shared candidate is running; earlier interrupted/stale runs cannot certify it.",
+      "category": "verification",
+      "evidence_refs": [
+        "/tmp/hws-ask-browser-ready.log",
+        "docs/evidence/ask-current-candidate.json"
+      ],
+      "resolution": "Full Chrome seven-test suite passed after recovered Auth fixtures were ready."
+    }
+  ],
+  "residual_risks": [
+    "Full M0\u2013M3 requirement coverage remains partial.",
+    "Initial main bundle exceeds Vite500KB warning."
+  ],
+  "limitations": [
+    "Cycles1\u20132: independent READY reviews of approved Ask UI/local help. Cycle1 identified incomplete browser/accessibility evidence; cycle2 verified browser issue fixed, all16candidate hashes current, no new actionable source defect; accessibility gate remains BLOCKED.",
+    "Independent review used READY structural/semantic indexes and verified actual source; reviewer made no edits.",
+    "Repository has no HEAD; runtime commit-bound review record cannot be fabricated.",
+    "No real AI, provider, external coding client or production deployment tested."
+  ]
+}

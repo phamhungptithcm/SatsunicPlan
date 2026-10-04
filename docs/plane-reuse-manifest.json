@@ -1,0 +1,358 @@
+{
+  "source": "https://github.com/makeplane/plane",
+  "tag": "v1.4.2",
+  "sha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+  "entries": [
+    {
+      "source": "packages/ui/src/button/button.tsx",
+      "target": "vendor/plane-community/packages/ui/src/button/button.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "f36af7fee64ac284538c6a0020ee766c0a471fef60c34f5aef3591694803b560",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "5a4155eea8d6d91c0482d5aaf61eb15483b8bdbffdb4a2ce7355627c36d550d7",
+      "imports": [
+        "react",
+        "../utils/classname",
+        "./helper",
+        "./helper"
+      ],
+      "modified": true,
+      "adaptation": "Narrow local utility import"
+    },
+    {
+      "source": "packages/ui/src/button/helper.tsx",
+      "target": "vendor/plane-community/packages/ui/src/button/helper.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "f513872e48deecf12ddb8fb03118cbf8989621a6ec8f41e0fda323a5069ec8d2",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "f513872e48deecf12ddb8fb03118cbf8989621a6ec8f41e0fda323a5069ec8d2",
+      "imports": [],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/ui/src/utils/classname.tsx",
+      "target": "vendor/plane-community/packages/ui/src/utils/classname.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "68b16665cd82bc930f50ced06b8e07cdafa4d16374a6d3570846348f52f12ebf",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "68b16665cd82bc930f50ced06b8e07cdafa4d16374a6d3570846348f52f12ebf",
+      "imports": [
+        "@plane/utils"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/layout/gantt.ts",
+      "target": "vendor/plane-community/packages/types/src/layout/gantt.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "ecc893bde9f42139b24134234ae46e1d2d52d478a5cbfd3b015b3c98a6e2f5f9",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "ecc893bde9f42139b24134234ae46e1d2d52d478a5cbfd3b015b3c98a6e2f5f9",
+      "imports": [],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/base-layouts/base.ts",
+      "target": "vendor/plane-community/packages/types/src/base-layouts/base.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "85d242dd678ba4ead305444f6b37693cb4643bb61104bd438c9214d5346c4055",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "85d242dd678ba4ead305444f6b37693cb4643bb61104bd438c9214d5346c4055",
+      "imports": [
+        "react"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/base-layouts/gantt/index.ts",
+      "target": "vendor/plane-community/packages/types/src/base-layouts/gantt/index.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "a709f73b4297e39c033ecd45b06c23bf2d6a7c09745eb608a120974ad9cdf05f",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "a709f73b4297e39c033ecd45b06c23bf2d6a7c09745eb608a120974ad9cdf05f",
+      "imports": [
+        "react",
+        "../base",
+        "./core",
+        "./extended"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/base-layouts/gantt/core.ts",
+      "target": "vendor/plane-community/packages/types/src/base-layouts/gantt/core.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "0955beb958e2711b230b9e2bf1abe8543b099aed6e5776e6adc5151989fe1cb8",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "0955beb958e2711b230b9e2bf1abe8543b099aed6e5776e6adc5151989fe1cb8",
+      "imports": [],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/base-layouts/gantt/extended.ts",
+      "target": "vendor/plane-community/packages/types/src/base-layouts/gantt/extended.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "7de3e3a2eaa3b672301179f58ba24157ce7c74b4def02b5abcf0a523674a5f84",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "7de3e3a2eaa3b672301179f58ba24157ce7c74b4def02b5abcf0a523674a5f84",
+      "imports": [],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/base-layouts/gantt/layout.tsx",
+      "target": "vendor/plane-community/apps/web/core/components/base-layouts/gantt/layout.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "9aa14a23d928d76962b1516b4f043ecbf50b9c4e9826930edbb07b2ecd3e1d1a",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "9aa14a23d928d76962b1516b4f043ecbf50b9c4e9826930edbb07b2ecd3e1d1a",
+      "imports": [
+        "react",
+        "mobx-react",
+        "@plane/types",
+        "@plane/types",
+        "@plane/utils",
+        "@/components/gantt-chart/contexts",
+        "@/components/gantt-chart/root",
+        "./sidebar"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/base-layouts/gantt/sidebar.tsx",
+      "target": "vendor/plane-community/apps/web/core/components/base-layouts/gantt/sidebar.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "508e69cc0375c6d0a3348329cf93d1dcc870653ecd33c407acd063fa1be1f517",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "ec04ba20aa4552de7ec4975f4d45943f39cdf71777dfb63fb3f3af819a69e10f",
+      "imports": [
+        "react",
+        "mobx-react",
+        "@plane/types",
+        "@hws/plane-adapter"
+      ],
+      "modified": true,
+      "adaptation": "Retain map/visibility semantics; remove Plane issue-store and DnD/pagination bindings"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/root.tsx",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/root.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "f58b71f78589bbffd0839cc152bd9586dcfd03f945a3a3d36084de72edef6dfe",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "5fb4d5672b61c45cf4dda25416068f2a89b5e12c2412bd5b152a5a1871b8d6d0",
+      "imports": [
+        "react",
+        "mobx-react",
+        "@plane/types",
+        "@hws/plane-adapter",
+        "./chart/root"
+      ],
+      "modified": true,
+      "adaptation": "Bind useTimeLineChartStore to scoped Firebase adapter"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/chart/root.tsx",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/chart/root.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "f1851ec07589c7fd94b706d16af9aa4b7f5da31c50907406c14b0c54a4834238",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "a20b9c3303b3b6cbd98ed8f8f93b13b6a87e22dff7783255becb8a99b4c87f34",
+      "imports": [
+        "react",
+        "mobx-react",
+        "@plane/types",
+        "@hws/plane-adapter",
+        "../data",
+        "../views/week-view",
+        "../views/month-view",
+        "../views/quarter-view",
+        "../views/helpers",
+        "@plane/utils",
+        "@hws/plane-button"
+      ],
+      "modified": true,
+      "adaptation": "Firebase scoped store/rendering, safe calendar overlays, local controls and ResizeObserver viewport centering; original upstream chart application UI not imported wholesale"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/constants.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/constants.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "a1c43d4825b4425ecb5e14377362599291cc3bd903f744861d76426b43afd902",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "a1c43d4825b4425ecb5e14377362599291cc3bd903f744861d76426b43afd902",
+      "imports": [],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/contexts/index.tsx",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/contexts/index.tsx",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "cf261ca59865fdafee89f4202ee2a35dae6b008c8a8ddb864fb84617fa5c6fee",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "cf261ca59865fdafee89f4202ee2a35dae6b008c8a8ddb864fb84617fa5c6fee",
+      "imports": [
+        "react",
+        "@plane/types"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/data/index.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/data/index.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "cbb9952cabb4b620b22cef22e3381ec9f671db16da36d3cedc34207e33a29c54",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "cbb9952cabb4b620b22cef22e3381ec9f671db16da36d3cedc34207e33a29c54",
+      "imports": [
+        "@plane/types",
+        "@plane/types"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/store/issue/issue_gantt_view.store.ts",
+      "target": "vendor/plane-community/apps/web/core/store/issue/issue_gantt_view.store.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "715f520de86a634bdd7deec7a846e7b150569abfe35fa208f2a554bf0ed02996",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "715f520de86a634bdd7deec7a846e7b150569abfe35fa208f2a554bf0ed02996",
+      "imports": [
+        "mobx",
+        "mobx-utils",
+        "@plane/types",
+        "@/components/gantt-chart/data"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/views/helpers.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/views/helpers.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "35d40992f7b12c43b063a025399795167a25f6b67b4b018b65cf4a6f6a35f533",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "492fe0468162bb083bb85bf5bf4e5fd458c11f9a3208ba1bff3bf2f870e793e7",
+      "imports": [
+        "@plane/types",
+        "@plane/utils",
+        "../constants"
+      ],
+      "modified": true,
+      "adaptation": "Calendar arithmetic avoids DST duration/mutation bugs"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/views/week-view.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/views/week-view.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "9a37b3ab75d215f6fc177f2bbdf012ca39f02037c7292c81bea8e473822afe28",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "e79cfbfdfd82130de89e0fd204dc88caa870d8d25547074b5bbc03803fb1675b",
+      "imports": [
+        "@plane/types",
+        "@plane/types",
+        "../data",
+        "./helpers"
+      ],
+      "modified": true,
+      "adaptation": "Use calendar date addition for week end across DST"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/views/month-view.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/views/month-view.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "40cea58a826560a7e30b8254baa732efe6458e562cf1cb18c49693aaa4bb6140",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "40cea58a826560a7e30b8254baa732efe6458e562cf1cb18c49693aaa4bb6140",
+      "imports": [
+        "lodash-es",
+        "@plane/types",
+        "../data",
+        "./helpers",
+        "./week-view",
+        "./week-view"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "apps/web/core/components/gantt-chart/views/quarter-view.ts",
+      "target": "vendor/plane-community/apps/web/core/components/gantt-chart/views/quarter-view.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "253aaafdcd25cb812f0d590cf9c4aa0e1328bb63aeee0a5e07269bc2b6fc79e6",
+      "status": "imported; adaptation tracked by local hash",
+      "localHash": "253aaafdcd25cb812f0d590cf9c4aa0e1328bb63aeee0a5e07269bc2b6fc79e6",
+      "imports": [
+        "@plane/types",
+        "../data",
+        "./helpers",
+        "./month-view",
+        "./month-view"
+      ],
+      "modified": false,
+      "adaptation": "Byte-identical upstream source"
+    },
+    {
+      "source": "packages/types/src/users.ts",
+      "target": "vendor/plane-community/packages/types/src/start-of-week.ts",
+      "upstreamSha": "5f7d92784c403f76284f0f16718f320221dc7fec",
+      "license": "AGPL-3.0-only",
+      "upstreamHash": "ff2f1339274164a92619ddbd8aa06123bbda0657b0be0d575e1fe28a06c4de03",
+      "status": "extract EStartOfTheWeek only",
+      "localHash": "1f65a6fdc2e1dadb77e091d2c88eceee73f36b068ef78d4039227d762d3b71aa",
+      "imports": [],
+      "modified": true,
+      "adaptation": "Extract/import binding adapted"
+    }
+  ],
+  "exclusions": [
+    "commercial email helper",
+    "enterprise and unknown-license files",
+    "upstream backend/root-store/runtime"
+  ],
+  "summary": {
+    "sourceEntries": 21,
+    "byteIdentical": 14,
+    "adapted": 7,
+    "referenceRuntime": "NOT RUN",
+    "ganttDragResize": "NOT IMPLEMENTED; disabled capabilities",
+    "issueBoardEditorPort": "NOT IMPLEMENTED"
+  },
+  "dependencyDeviation": {
+    "mobx-react": {
+      "upstream": "9.1.1",
+      "target": "9.2.0",
+      "reason": "9.1.1 peer excludes React 19; 9.2.0 registry metadata includes React19; no force install"
+    }
+  }
+}

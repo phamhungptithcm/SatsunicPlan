@@ -1,0 +1,31 @@
+{
+  "task": "HWS-V2-003",
+  "capturedAt": "2026-10-04T18:55:53.630070+00:00",
+  "gitHead": null,
+  "sourceHashes": {
+    "src/features/ask/AskWorkspace.tsx": "d28e679a34649f688e5e3a0ae5c37261601ee33cb4071c164440c240234206d5",
+    "src/features/ask/ask-integration.module.css": "82038d72b7cb64513224e319dd7926b8280c59094cf68e2a4c49923662866444",
+    "src/features/ask/ask-workspace.module.css": "9cf59755f6a38d2f0a81560fde21f53e1af87e410e953fff60ced18b98ecc147",
+    "src/features/ask/contracts.ts": "746a0049973ecf957aef918bab3b72682b6de3e0c00a45054456b57a5110f6a9",
+    "src/features/ask/deadline.ts": "e818d219788ff363ab1dc7a6f89350fe2340b65c7df570841e1016a52693b9a5",
+    "src/features/ask/help.ts": "60d61f7866b5530f6ac84e3c5eeed28dfecb6a84e0c35bcf5e3699b3d97f1bf4",
+    "tests/ask-reference.mjs": "337ba42f07cce77b42243bef810133d199bdbece3fca65d92ecf93a3554362de",
+    "tests/ask.test.ts": "edf846c12c2f6cb52586a31d96ebf349febff1cc874747030e11b6ce2f1c3872",
+    "tests/browser.spec.ts": "73fe536e9307c0e623df8af4fe6df903e3c2a979c835efce39f4b7574f399cee",
+    "tests/playwright.config.ts": "ddf6cee9e6dd41bd836dec19dc8301af1419d89bd966338fcfced8c9a25f5aa5",
+    "src/app/main.tsx": "e85a61cd27cf4393972e6e975d1f04a0f84fa01b2acd02fc67878a47d771636e",
+    "src/styles/app.css": "b7c1887f7f76efedb66a4acf557551aa40c4322926d75ac4c3a663bd8eccf6db",
+    "src/features/roadmap/PlaneRoadmap.tsx": "5129b12b85509f284854969f76626b710dd7b82fd2e00b582c5ae2dc8b7cf250",
+    "src/lib/firebase/client.ts": "7d3abc7ca1054a6c11c43919becee33523b8c2ffcb7fdd1aba2a4cffc1cdadfe",
+    "src/lib/firebase/config.ts": "3ce6838399612593005f4df6b8337b2616036fece3b6317a17cfc9d7b8da5738",
+    "package.json": "cffe622cf10d4647cfdfdcffeffd833ed858ed1274557759df2ad55832d67aa9"
+  },
+  "note": "Current uncommitted shared candidate; hashes include other-chat visual/Firebase integration, not approval or production certification",
+  "verification": {
+    "build": "PASS",
+    "unit": "PASS19",
+    "browser": "PASS7",
+    "emulator": "PASS12",
+    "production": "NOT_READY"
+  }
+}

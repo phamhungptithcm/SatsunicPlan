@@ -1,0 +1,24 @@
+{
+  "channels": [
+    {
+      "name": "projects/satsunicplan/sites/satsunicplan/channels/satsunicplan-readiness",
+      "url": "https://satsunicplan--satsunicplan-readiness-e39jw800.web.app",
+      "createTime": "2026-10-04T19:02:03.397304473Z",
+      "updateTime": "2026-10-04T19:02:05.411Z",
+      "expireTime": "2026-10-11T19:02:03.397304473Z",
+      "release": {
+        "name": "projects/satsunicplan/sites/satsunicplan/channels/satsunicplan-readiness/releases/1791140525411000",
+        "type": "DEPLOY",
+        "releaseTime": "2026-10-04T19:02:05.411Z"
+      },
+      "versionName": "projects/satsunicplan/sites/satsunicplan/versions/d44e29b3d81e105c"
+    },
+    {
+      "name": "projects/satsunicplan/sites/satsunicplan/channels/live",
+      "url": "https://satsunicplan.web.app",
+      "createTime": "2026-10-04T18:25:38.856030968Z",
+      "updateTime": "2026-10-04T18:25:38.856030968Z"
+    }
+  ],
+  "liveBaselineUnchanged": true
+}

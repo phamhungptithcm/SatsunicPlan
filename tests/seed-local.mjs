@@ -1,0 +1,4 @@
+import {spawn} from 'node:child_process';
+const response=await fetch('http://127.0.0.1:14400/emulators').catch(()=>null);if(!response?.ok)throw new Error('Start this workspace Emulator Suite before seeding. No production fallback.');
+const info=await response.json();for(const [name,port] of [['auth',19099],['firestore',18080],['storage',19199],['functions',15001]])if(info[name]?.port!==port||info[name]?.host!=='127.0.0.1')throw new Error('Emulator inventory does not match this workspace.');
+const child=spawn(process.execPath,['--import','tsx','tests/seed.ts'],{stdio:'inherit',env:{...process.env,GCLOUD_PROJECT:'demo-hunpeolabs-workspace',FIRESTORE_EMULATOR_HOST:'127.0.0.1:18080',FIREBASE_AUTH_EMULATOR_HOST:'127.0.0.1:19099',GOOGLE_APPLICATION_CREDENTIALS:new URL('./.cli-config/no-cloud-credentials.json',import.meta.url).pathname}});child.on('exit',code=>process.exit(code??1));

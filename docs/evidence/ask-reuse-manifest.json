@@ -1,0 +1,47 @@
+{
+  "source": "owner-authorized local HunpeoLabs WIP",
+  "baseCommit": "3f9997ea31670ffe7611cf280c98dd9e6eb5bfab",
+  "commitIsNotSourceProvenance": true,
+  "entries": [
+    {
+      "sourcePath": "components/ask-hunpeolabs.tsx",
+      "upstreamHash": "e8e9dfca5fff1641441fbe3bf83db9065cd752cfa5e84f467dedc8b940eff80e",
+      "target": "src/features/ask/AskWorkspace.tsx",
+      "localHash": "d28e679a34649f688e5e3a0ae5c37261601ee33cb4071c164440c240234206d5",
+      "adaptation": "Source lifecycle/motion port; Next/business/provider bindings replaced with Vite-safe typed local help; stable unique dialog id, scoped suspension and focus restoration",
+      "byteIdentical": false
+    },
+    {
+      "sourcePath": "components/ask-hunpeolabs.module.css",
+      "upstreamHash": "9cf59755f6a38d2f0a81560fde21f53e1af87e410e953fff60ced18b98ecc147",
+      "target": "src/features/ask/ask-workspace.module.css",
+      "localHash": "9cf59755f6a38d2f0a81560fde21f53e1af87e410e953fff60ced18b98ecc147",
+      "adaptation": "Byte-identical source stylesheet; integration rules live separately",
+      "byteIdentical": true
+    },
+    {
+      "sourcePath": "lib/ask/deadline.ts",
+      "upstreamHash": "e25a5e18eec95512861e68eaa18af2e9870248fc6eb41df13f8c693df694fb89",
+      "target": "src/features/ask/deadline.ts",
+      "localHash": "e818d219788ff363ab1dc7a6f89350fe2340b65c7df570841e1016a52693b9a5",
+      "adaptation": "Original cancellation helper plus attribution comment",
+      "byteIdentical": false
+    }
+  ],
+  "newFiles": [
+    "src/features/ask/contracts.ts",
+    "src/features/ask/help.ts",
+    "src/features/ask/ask-integration.module.css"
+  ],
+  "excluded": [
+    "provider.ts",
+    "security.ts",
+    "firebase-client.ts",
+    "Genkit/Gemini dependencies",
+    "business knowledge/pricing/founder portrait",
+    "any source API endpoint"
+  ],
+  "browserReference": "isolated exact source component/CSS with explicitly labeled synthetic knowledge and Next shims; no source API/provider",
+  "parityClaim": "No 100% full-site or answer-content parity claim; source-derived UI and behavior evaluated separately",
+  "updatedAt": "2026-10-04T18:38:18.883531+00:00"
+}

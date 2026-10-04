@@ -1,0 +1,7 @@
+{
+  "file": "HunpeoLabs-Workspace-Codex-Master-Prompt-FINAL-v2.md",
+  "sha256": "cf8015e13fc42be5dbcd5607921b8e2c1fe91dbcc2659ffe31b2524c84507ea5",
+  "lines": 2007,
+  "coverage_units": 359,
+  "method": "Every non-heading nonblank block retained verbatim; compound blocks need atomic test refinement; no claimed implementation coverage."
+}

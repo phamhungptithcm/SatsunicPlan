@@ -1,0 +1,15 @@
+{
+  "owner": "01a1080f-686d-71d0-8067-3e1d40d32505",
+  "plan": "SP-UI-002 v1",
+  "before": {
+    "src/app/main.tsx": "e85a61cd27cf4393972e6e975d1f04a0f84fa01b2acd02fc67878a47d771636e",
+    "src/styles/app.css": "b7c1887f7f76efedb66a4acf557551aa40c4322926d75ac4c3a663bd8eccf6db"
+  },
+  "gate": "DEGRADED; native inspection authorized by AGENTS and repository-intelligence-gate.yaml. Legacy approval validator wrongly requires READY; no forged status.",
+  "handoff": "docs/session-coordination-implementation.md",
+  "after": {
+    "src/app/main.tsx": "ab0e69662a67c485d4ee88ec82f9258d0fe05fe9aba8f3f4dab44e7ae6ca8f62",
+    "src/styles/app.css": "602539a715803f825579e64b569a776eab9bb87ea4f6619e5996bded6f59da91"
+  },
+  "status": "Source stable; build passed; formal review BLOCKED"
+}

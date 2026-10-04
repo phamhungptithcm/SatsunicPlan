@@ -1,0 +1,17 @@
+:root {
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+  color: #111c35;
+  background: #f8f9fb;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { min-height: 100svh; display: grid; place-items: center; padding: clamp(12px, 4vw, 24px); }
+section { width: 100%; max-width: 34rem; padding: clamp(16px, 5vw, 48px); border: 1px solid #e9ebf0; border-radius: 7px; background: #fff; }
+.brand-mark { display: block; width: 2rem; height: .25rem; background: #163cff; border-radius: 2px; }
+h1 { margin: 1rem 0 .5rem; font-size: clamp(1.25rem, 5vw, 2.25rem); font-weight: 650; line-height: 1.2; letter-spacing: -.035em; overflow-wrap: anywhere; }
+p { margin: 0; }
+.state { font-weight: 600; }
+.description { margin-top: .75rem; color: #566176; overflow-wrap: anywhere; }
