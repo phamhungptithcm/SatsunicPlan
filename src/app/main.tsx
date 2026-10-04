@@ -28,7 +28,7 @@ function accountLabel(user:User){return user.displayName?.trim()||user.email?.sp
 function SignOutIcon(){return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 5H5v14h4M10 12h10m-4-4 4 4-4 4"/></svg>;}
 function App(){
  const [user,setUser]=useState<User|null>(null),[authReady,setAuthReady]=useState(false);
- const [email,setEmail]=useState('author@example.test'),[password,setPassword]=useState('Synthetic-only-2026!');
+ const [email,setEmail]=useState(runtimeMode==='emulator'?'author@example.test':''),[password,setPassword]=useState(runtimeMode==='emulator'?'Synthetic-only-2026!':'');
  const [projects,setProjects]=useState<Project[]>([]),[project,setProject]=useState<Project|null>(null),[data,setData]=useState<Snapshot|null>(null);
  const [page,setPage]=useState<Page>('Roadmap'),[busy,setBusy]=useState(false),[notice,setNotice]=useState(''),[error,setError]=useState('');
  const [selected,setSelected]=useState<string|null>(new URLSearchParams(location.search).get('task'));

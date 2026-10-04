@@ -42,7 +42,11 @@ try{
    }
    blocked.push(url.hostname);return route.abort('blockedbyclient');
   });
-  await page.goto(origin);await page.getByLabel('Email',{exact:true}).fill('human@example.test');await page.getByLabel('Password',{exact:true}).fill('Synthetic-only-2026!');await page.getByRole('button',{name:'Sign in',exact:true}).click();
+  await page.goto(origin);
+  assert.equal(await page.getByLabel('Email',{exact:true}).inputValue(),'');
+  assert.equal(await page.getByLabel('Password',{exact:true}).inputValue(),'');
+  await page.screenshot({path:resolve(out,`cloud-login-${width}.png`),fullPage:true});
+  await page.getByLabel('Email',{exact:true}).fill('human@example.test');await page.getByLabel('Password',{exact:true}).fill('Synthetic-only-2026!');await page.getByRole('button',{name:'Sign in',exact:true}).click();
   try{await page.getByRole('heading',{name:'Roadmap',exact:true}).waitFor();}catch(e){
    await page.screenshot({path:resolve(out,`failed-signin-${width}.png`),fullPage:true});
    console.log(JSON.stringify({state:'synthetic-signin-failed',errors,operations,blocked,alerts:await page.getByRole('alert').allTextContents()}));throw e;
