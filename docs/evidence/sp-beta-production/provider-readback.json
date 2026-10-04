@@ -1,0 +1,42 @@
+{
+  "sourceCommit": "a7174e9a82d40c0cf6343396cd86cf4d8fcfb7ea",
+  "time": "2026-10-04T22:06:36.456Z",
+  "firestore": {
+    "location": "asia-southeast1",
+    "type": "FIRESTORE_NATIVE",
+    "deleteProtection": "DELETE_PROTECTION_ENABLED",
+    "rulesRelease": "projects/satsunicplan/releases/cloud.firestore",
+    "ruleset": "projects/satsunicplan/rulesets/37fcf267-1b05-4fca-9fd7-ddd95fa53105",
+    "rulesHashMatch": true
+  },
+  "auth": {
+    "emailPasswordEnabled": true,
+    "authorizedDomains": [
+      "satsunicplan.firebaseapp.com",
+      "satsunicplan.web.app"
+    ]
+  },
+  "api": {
+    "state": "ACTIVE",
+    "runtime": "nodejs22",
+    "region": "us-central1",
+    "uri": "https://api-sg6xyo677a-uc.a.run.app",
+    "functionUrl": "https://us-central1-satsunicplan.cloudfunctions.net/api",
+    "revision": "api-00002-dil",
+    "maxInstances": 3,
+    "humanEnabled": true,
+    "hosts": [
+      "us-central1-satsunicplan.cloudfunctions.net",
+      "api-sg6xyo677a-uc.a.run.app",
+      "satsunicplan.web.app"
+    ],
+    "origins": [
+      "https://satsunicplan.web.app"
+    ]
+  },
+  "hosting": {
+    "release": "sites/satsunicplan/releases/1791147392551000",
+    "version": "sites/satsunicplan/versions/e0fca667fc0110ad",
+    "type": "DEPLOY"
+  }
+}

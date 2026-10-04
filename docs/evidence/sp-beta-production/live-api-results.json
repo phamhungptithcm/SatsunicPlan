@@ -1,0 +1,71 @@
+{
+  "firstCycle": {
+    "kind": "LIVE_FIREBASE_SIGNED_HUMAN_API",
+    "syntheticData": true,
+    "results": [
+      {
+        "name": "missing bearer denial",
+        "status": "PASSED"
+      },
+      {
+        "name": "invalid bearer denial",
+        "status": "PASSED"
+      },
+      {
+        "name": "wrong origin denial",
+        "status": "PASSED"
+      },
+      {
+        "name": "live Firebase synthetic signup",
+        "status": "PASSED"
+      },
+      {
+        "name": "signed human API read",
+        "status": "PASSED"
+      },
+      {
+        "name": "synthetic workspace transaction",
+        "status": "PASSED"
+      },
+      {
+        "name": "Firestore persistence readback",
+        "status": "PASSED"
+      },
+      {
+        "name": "synthetic account disabled",
+        "status": "BLOCKED"
+      }
+    ]
+  },
+  "correctedCycle": {
+    "kind": "LIVE_FIREBASE_SIGNED_HUMAN_API",
+    "syntheticData": true,
+    "results": [
+      {
+        "name": "signed human persistence readback",
+        "status": "PASSED"
+      },
+      {
+        "name": "actual project view",
+        "status": "PASSED"
+      },
+      {
+        "name": "cross-scope denial",
+        "status": "PASSED"
+      },
+      {
+        "name": "synthetic token revocation applied",
+        "status": "PASSED"
+      },
+      {
+        "name": "revoked signed token denied",
+        "status": "PASSED"
+      },
+      {
+        "name": "synthetic account disabled",
+        "status": "PASSED"
+      }
+    ]
+  },
+  "firstCycleLimitation": "Wrong operation name in probe; missing quota header in Auth admin probe. Corrected cycle verified real operations/revocation/fixture disable without new IAM."
+}

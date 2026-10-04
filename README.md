@@ -3,11 +3,11 @@
 Cloud target: **satsunicplan**. Local tests retain an isolated demo project.
 See [incremental Firebase deployment](docs/satsunicplan-firebase-runbook.md).
 
-React + TypeScript + Vite + Firebase replatform based on a pinned Plane Community source reference. MCP is the primary external-agent workflow; no embedded LLM or coding runtime. This is an **incomplete local candidate**, not a completed M1/full product or production release.
+React + TypeScript + Vite + Firebase replatform based on a pinned Plane Community source reference. The local agent pilot uses MCP; no embedded LLM or coding runtime. A scoped human beta is deployed at [satsunicplan.web.app](https://satsunicplan.web.app). Cloud MCP is unavailable; full M1/master/product production readiness remains incomplete. See [deployment receipt](docs/sp-beta-001-deployment-receipt.md).
 
 ## Local setup
 
-Requirements: Node >=22.12, npm, Java >=21, installed Google Chrome for browser tests. Lockfile pins dependencies. SP-PROD-001 local build/unit/backend checks ran cached Node22.23.3/Java24; deployed Functions Node22 compatibility and live acceptance remain NOT RUN. Earlier evidence used Node25.
+Requirements: Node >=22.12, npm, Java >=21, installed Google Chrome for browser tests. Lockfile pins dependencies. SP-PROD-001 local build/unit/backend checks ran cached Node22.23.3/Java24; deployed Node22 API and real Hosting Auth/API acceptance now have scoped beta evidence in docs/evidence/sp-beta-production. Earlier evidence used Node25.
 
 ```sh
 npm ci --ignore-scripts
@@ -58,7 +58,7 @@ See docs/mcp-api.md, docs/mcp-auth.md and docs/mcp-clients.md. Do not configure 
 
 ## Release boundary
 
-Do not deploy this candidate. SP-PROD-001 adds explicit human cloud-runtime opt-in for local validation; missing or mixed configuration is rejected, and MCP cloud stays disabled. Live Auth/API/security/operations acceptance is still required before release. See docs/satsunicplan-firebase-runbook.md. Application Hosting config is preparation only; the separately approved static preview does not serve a working backend. No billing, production access, push, merge or package publish is authorized. The reference checkout stays separate; reviewed Community frontend source is now included in the target build. No Plane backend or commercial email helper was copied. See THIRD_PARTY_NOTICES.md and docs/migration.md.
+The first human beta was deployed with explicit owner authority, selected billing and Singapore Firestore. Production frontend source is tagged `v0.1.0-beta.1+build.1`; the earlier immutable `v0.1.0-beta.1` source prerelease is retained. Read [release notes](docs/releases/v0.1.0-beta.1.md) and [exact-candidate receipt](docs/sp-beta-001-deployment-receipt.md). Cloud activation requires verified public settings and exact API Host/Origin allowlists; missing or mixed configuration is rejected. MCP stays disabled in cloud. Full master coverage, actual agent clients, operations/restore/performance and full transitive license audit remain incomplete. Root AGPL LICENSE and retained third-party notices apply to the owner-approved public source distribution. Future deployment requires fresh authorization/readback/rollback evidence; do not deploy local or synthetic browser builds. The preparation helper retains legacy selector/blocker metadata and is not a deployment executor. No Plane backend or commercial email helper was copied.
 
 ## Plane Community source reuse
 

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "task_id": "SP-BETA-001",
+  "status": "PASSED",
+  "scope": "SCOPED_HUMAN_BETA_ROLLOUT_ONLY",
+  "source_commit": "a7174e9a82d40c0cf6343396cd86cf4d8fcfb7ea",
+  "full_product_production_readiness": "NOT_READY",
+  "dimensions": {
+    "requirement_match": {
+      "status": "PASSED",
+      "summary": "Requested main/tags/release notes and scoped human beta deployed with exact-candidate evidence. Full master excluded from scoped pass.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "security": {
+      "status": "PASSED",
+      "summary": "Verified missing/invalid/revoked signed tokens and cross-scope/Origin denials; synthetic acceptance account disabled; no cloud MCP.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "code_quality": {
+      "status": "PASSED",
+      "summary": "Mode-specific cloud login correction reviewed; Node22 build25tests and browser evidence; unchanged backend source.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "failure_paths": {
+      "status": "PASSED",
+      "summary": "Generated artifacts removed; wrong selector/probe/quota-header failures recorded and corrected; actual live denials verified.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "error_handling": {
+      "status": "PASSED",
+      "summary": "Fail-closed activation and result uncertainty preserved; image-cleanup warning recorded; no force deletion applied.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "production_readiness": {
+      "status": "PASSED",
+      "summary": "PASSED for documented human-beta rollout only:5/5servedhashes, providerACTIVE/readback, actualHostingAuth/API1440/390. Full production master remainsNOT_READY.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    },
+    "trade_offs": {
+      "status": "PASSED",
+      "summary": "Source tag immutable; production build separately bound to correctionSHA. FirestoreSingapore and existingUSFunctions explicit. Fullops/master/licenseaudits deferred.",
+      "evidence_refs": [
+        "docs/sp-beta-001-deployment-receipt.md",
+        "docs/evidence/sp-beta-production/provider-readback.json",
+        "docs/evidence/sp-beta-production/artifact-readback.json",
+        "docs/evidence/sp-beta-production/browser-results.json",
+        "docs/evidence/sp-beta-production/live-api-results.json",
+        "docs/sp-beta-001-login-content-review.md"
+      ]
+    }
+  },
+  "review_cycles": [
+    {
+      "cycle": 1,
+      "decision": "BLOCKED",
+      "scope": "Initial source publication collection",
+      "blocker": "Index gate stale/DEGRADED; legal approval pending."
+    },
+    {
+      "cycle": 2,
+      "decision": "CHANGES_REQUESTED",
+      "finding": "Nested generated browser artifacts staged",
+      "resolution": "Unstaged preserving local files; recursive ignore; reexportbuild25tests."
+    },
+    {
+      "cycle": 3,
+      "decision": "BLOCKED",
+      "scope": "Fixed artifact re-review",
+      "blocker": "Legal approval and refreshedREADY gate pending; no technicalfinding remaining."
+    },
+    {
+      "cycle": 4,
+      "decision": "APPROVED",
+      "scope": "Source publication: ownerAGPLapproval, READYgate, exactcandidate, build25tests, immutabletag/readback."
+    },
+    {
+      "cycle": 5,
+      "decision": "APPROVED",
+      "scope": "Cloud login correction, eight-principle content and rendered regression."
+    },
+    {
+      "cycle": 6,
+      "decision": "APPROVED",
+      "scope": "Human-beta preHosting promotion after signed/persistence/revocation checks."
+    },
+    {
+      "cycle": 7,
+      "decision": "PASSED",
+      "scope": "Final Hosting5/5hashes/provider/livebrowser readback; independent reviewerAPPROVED."
+    },
+    {
+      "cycle": 8,
+      "decision": "APPROVED",
+      "scope": "Final documentation consistency only; no source/build/provider change."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "status": "FIXED",
+      "location": "tests/tests/.browser-results",
+      "summary": "Generated failed-run artifacts excluded before first publication."
+    },
+    {
+      "severity": "medium",
+      "status": "FIXED",
+      "location": "src/app/main.tsx",
+      "summary": "Cloud login emulator credential defaults removed; real and fixture browser checked."
+    }
+  ],
+  "residual_risks": [
+    "Fullmaster/MCP/actualclients/operations/restore/performance/accessibility/localization not certified",
+    "Artifact Registry cleanup policy unset; no image deletion automatically enabled",
+    "Full transitive license audit incomplete; owner accepted AGPL source posture",
+    "Preparation-only helper legacy selector/blocker metadata",
+    "Bundle505.9KBwarning"
+  ],
+  "limitations": [
+    "Runtime ledger CLI unavailable",
+    "Tokenusage/actualcost unavailable",
+    "Prior source tag is not the corrected production candidate; separate build tag binds deployedsource",
+    "No priorliveHosting baseline; rollbackdrillNOT_TESTED",
+    "Final reviewer sandbox CocoIndex check DEGRADED; root elevated refreshed check READY at deployed source SHA. Bounded source/provider evidence reviewed."
+  ]
+}

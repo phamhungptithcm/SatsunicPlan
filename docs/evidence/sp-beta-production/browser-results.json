@@ -1,0 +1,24 @@
+{
+  "sourceCommit": "a7174e9a82d40c0cf6343396cd86cf4d8fcfb7ea",
+  "results": [
+    {
+      "width": 1440,
+      "kind": "LIVE_HOSTING_REAL_AUTH_API",
+      "signedIn": true,
+      "successfulApiResponses": 4,
+      "agentUnavailable": true,
+      "pageErrors": 0
+    },
+    {
+      "width": 390,
+      "kind": "LIVE_HOSTING_REAL_AUTH_API",
+      "signedIn": true,
+      "successfulApiResponses": 4,
+      "agentUnavailable": true,
+      "pageErrors": 0
+    },
+    {
+      "fixtureAccountDisabledAndRevoked": true
+    }
+  ]
+}

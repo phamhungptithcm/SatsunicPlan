@@ -1,0 +1,35 @@
+{
+  "sourceCommit": "a7174e9a82d40c0cf6343396cd86cf4d8fcfb7ea",
+  "results": [
+    {
+      "path": "/index.html",
+      "sha256": "3db592662495f093e48b21c3bc3a73d15faa6ebf0a9515eee1777449b7c75002",
+      "bytes": 355,
+      "status": "PASSED"
+    },
+    {
+      "path": "/assets/index-BauGBi5i.css",
+      "sha256": "e571d5e3503c3946ecf0ef6884c02c89e52c9b00863704f8767225edca3546ee",
+      "bytes": 17043,
+      "status": "PASSED"
+    },
+    {
+      "path": "/assets/index-CPTnQCpU.js",
+      "sha256": "7529223ae0d9c2f65cf73220a8e850a14e4534aa19754767ee903cb1a5549012",
+      "bytes": 506274,
+      "status": "PASSED"
+    },
+    {
+      "path": "/assets/AskWorkspace-DmbH7P49.js",
+      "sha256": "c5dec9bd0da046a2f198ca42cb24901200c707b35f39ee14ec529e20cf753441",
+      "bytes": 19098,
+      "status": "PASSED"
+    },
+    {
+      "path": "/assets/AskWorkspace-Bhrr8hrr.css",
+      "sha256": "0851d62748d1d5305b74c24a713494d99fdc23d1d3cde7e87ab635184fbb6b44",
+      "bytes": 10686,
+      "status": "PASSED"
+    }
+  ]
+}
